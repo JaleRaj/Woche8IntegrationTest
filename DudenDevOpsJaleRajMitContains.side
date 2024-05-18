@@ -1,0 +1,212 @@
+{
+  "id": "5e0aaf91-83da-4a98-8240-0127beeeda59",
+  "version": "2.0",
+  "name": "DudenDevOpsJaleRaj",
+  "url": "https://www.duden.de",
+  "tests": [{
+    "id": "c4957211-739c-4398-bd9c-f04bf80eaedb",
+    "name": "DudenTest",
+    "commands": [{
+      "id": "a0ca3538-6f53-4493-8701-ecc1db7a4fc6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52fd63f8-d9b3-4c62-94f9-138f7088f5ac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c00f255-85a6-4084-806c-a0e44fc8473f",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-search-api-fulltext--2",
+      "targets": [
+        ["id=edit-search-api-fulltext--2", "id"],
+        ["name=search_api_fulltext", "name"],
+        ["css=#edit-search-api-fulltext--2", "css:finder"],
+        ["xpath=//input[@id='edit-search-api-fulltext--2']", "xpath:attributes"],
+        ["xpath=//form[@id='lexem-search-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67ff43a2-0fd8-4343-bdf6-f9af31c4b290",
+      "comment": "",
+      "command": "type",
+      "target": "id=edit-search-api-fulltext--2",
+      "targets": [
+        ["id=edit-search-api-fulltext--2", "id"],
+        ["name=search_api_fulltext", "name"],
+        ["css=#edit-search-api-fulltext--2", "css:finder"],
+        ["xpath=//input[@id='edit-search-api-fulltext--2']", "xpath:attributes"],
+        ["xpath=//form[@id='lexem-search-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Ball"
+    }, {
+      "id": "fee162af-6e68-48e6-a32f-27f842cfa00c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=edit-search-api-fulltext--2",
+      "targets": [
+        ["id=edit-search-api-fulltext--2", "id"],
+        ["name=search_api_fulltext", "name"],
+        ["css=#edit-search-api-fulltext--2", "css:finder"],
+        ["xpath=//input[@id='edit-search-api-fulltext--2']", "xpath:attributes"],
+        ["xpath=//form[@id='lexem-search-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "23ef98f8-cece-49da-b355-0e5dbc11183d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.placeholder",
+      "targets": [
+        ["css=.placeholder", "css:finder"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'fc barcelona')]", "xpath:innerText"]
+      ],
+      "value": "Ball"
+    }, {
+      "id": "0f2777cc-d036-4401-a2df-8be7662bee30",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.vignette:nth-child(2) strong",
+      "targets": [
+        ["css=.vignette:nth-child(2) strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Ball')]", "xpath:innerText"]
+      ],
+      "value": "Ball"
+    }]
+  }, {
+    "id": "9d74b2d2-29d2-4ac0-92da-7045334cb608",
+    "name": "DudenContains",
+    "commands": [{
+      "id": "09805860-8032-4690-90ff-ddfaa9193255",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9183e496-050d-4fcc-81e3-aef6c0f416e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e81acc50-81d2-4156-ba12-09b64976078e",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-search-api-fulltext--2",
+      "targets": [
+        ["id=edit-search-api-fulltext--2", "id"],
+        ["name=search_api_fulltext", "name"],
+        ["css=#edit-search-api-fulltext--2", "css:finder"],
+        ["xpath=//input[@id='edit-search-api-fulltext--2']", "xpath:attributes"],
+        ["xpath=//form[@id='lexem-search-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "137af102-a609-4877-8c4e-9d9917f4403e",
+      "comment": "",
+      "command": "type",
+      "target": "id=edit-search-api-fulltext--2",
+      "targets": [
+        ["id=edit-search-api-fulltext--2", "id"],
+        ["name=search_api_fulltext", "name"],
+        ["css=#edit-search-api-fulltext--2", "css:finder"],
+        ["xpath=//input[@id='edit-search-api-fulltext--2']", "xpath:attributes"],
+        ["xpath=//form[@id='lexem-search-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Handball"
+    }, {
+      "id": "97bea2fc-eb4b-4ad4-a566-6e7bc9d95897",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=edit-search-api-fulltext--2",
+      "targets": [
+        ["id=edit-search-api-fulltext--2", "id"],
+        ["name=search_api_fulltext", "name"],
+        ["css=#edit-search-api-fulltext--2", "css:finder"],
+        ["xpath=//input[@id='edit-search-api-fulltext--2']", "xpath:attributes"],
+        ["xpath=//form[@id='lexem-search-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8323c325-ed4f-4e5f-9dd3-feb1d522bfc2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.placeholder",
+      "targets": [
+        ["css=.placeholder", "css:finder"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'fc barcelona')]", "xpath:innerText"]
+      ],
+      "value": "Handball"
+    }, {
+      "id": "bb1762a6-28c5-437e-b2c9-3ab33721c5ae",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.vignette:nth-child(2) strong",
+      "targets": [],
+      "value": "actualText"
+    }, {
+      "id": "b68cb5f2-3d33-4d48-9fb6-8e1f09bcebd5",
+      "comment": "",
+      "command": "echo",
+      "target": "${actualText}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13b71b4e-21b4-458c-b90c-c6192ed8beaa",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return /ball/i.test(${actualText});",
+      "targets": [],
+      "value": "isBallPresent"
+    }, {
+      "id": "ba3a26b7-9a0e-44b1-9635-e59199db6924",
+      "comment": "",
+      "command": "echo",
+      "target": "${actualText}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d30c5533-0b48-44aa-bdc7-c75f3bf85cb7",
+      "comment": "",
+      "command": "echo",
+      "target": "${isBallPresent}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28e29dcc-ff82-435a-9e68-4faa53041f84",
+      "comment": "",
+      "command": "verify",
+      "target": "isBallPresent",
+      "targets": [],
+      "value": "true"
+    }]
+  }],
+  "suites": [{
+    "id": "9a2c0947-3712-4c22-8fa4-675080915700",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c4957211-739c-4398-bd9c-f04bf80eaedb"]
+  }],
+  "urls": ["https://www.duden.de/"],
+  "plugins": []
+}
