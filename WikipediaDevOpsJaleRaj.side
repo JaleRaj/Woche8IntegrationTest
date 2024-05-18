@@ -1,0 +1,89 @@
+{
+  "id": "a0e422dc-913e-4ff9-92ff-08392a39018b",
+  "version": "2.0",
+  "name": "WikipediaDevOpsJaleRaj",
+  "url": "https://wikipedia.org",
+  "tests": [{
+    "id": "75074242-1fa8-4de5-9a99-e1143ec577af",
+    "name": "Untitled",
+    "commands": [{
+      "id": "8b44b2ee-1ad8-4610-8de9-f5d4361ba18b",
+      "comment": "",
+      "command": "open",
+      "target": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6035265e-eb61-496d-bf0c-8e522cc40e74",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ca0e234-473e-495a-8d0e-88265bb0f2d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d65389b-deeb-44bf-9682-794b808e4312",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "fc barcelona"
+    }, {
+      "id": "07915de1-6524-4662-8925-77a5c8de3e2b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "205603dd-a654-4eb1-adab-e54ccdb3c2d8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.mw-page-title-main",
+      "targets": [
+        ["css=.mw-page-title-main", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'FC Barcelona')]", "xpath:innerText"]
+      ],
+      "value": "FC Barcelona"
+    }]
+  }],
+  "suites": [{
+    "id": "93b4e9e6-6b96-4ee5-8ffb-2c2ab2f4ca8b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["75074242-1fa8-4de5-9a99-e1143ec577af"]
+  }],
+  "urls": ["https://wikipedia.org/"],
+  "plugins": []
+}
